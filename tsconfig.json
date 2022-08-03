@@ -29,7 +29,8 @@
 		"paths": {
 			"@": ["src"],
 			"@/*": ["src/*"]
-		}
+		},
+		"types": ["@emotion/react/types/css-prop"] // emotion 사용 시 type 관련 오류 해결
 	},
 	"include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "vite.config.ts"],
 	"exclude": ["node_modules", "dist", "**/*.js"]
