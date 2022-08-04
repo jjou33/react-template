@@ -1,8 +1,8 @@
-import { css } from '@emotion/react'
 import { Spin } from 'antd'
 import React, { Suspense } from 'react'
+import styled from 'styled-components'
 
-const spinStyle = css`
+const spinStyle = styled(Spin)`
   margin: 20px 0;
   margin-bottom: 20px;
   padding: 30px 50px;

@@ -1,22 +1,17 @@
-import { AxiosCanceler } from '@/api/helper/axiosCancel'
 import { Button, Checkbox, Form, Input } from 'antd'
-import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import styled from 'styled-components'
+const FormWrapper = styled(Form)`
+  position: relative;
+  top: 10rem;
+  left: -2rem;
+`
 const LoginForm = (props: any) => {
-  const navigate = useNavigate
-  const [userInfo, setUserInfo] = useState([])
-  const [loading, setLoading] = useState(false)
-  const cancel = new AxiosCanceler()
-  const onFinish = (values: any) => {
-    console.log(cancel.testFunction())
-  }
+  const onFinish = (values: any) => {}
 
-  const onFinishFailed = (errorInfo: any) => {
-    console.log('Failed: ', errorInfo)
-  }
+  const onFinishFailed = (errorInfo: any) => {}
 
   return (
-    <Form
+    <FormWrapper
       name="basic"
       labelCol={{ span: 8 }}
       wrapperCol={{ span: 16 }}
@@ -50,7 +45,7 @@ const LoginForm = (props: any) => {
           Submit
         </Button>
       </Form.Item>
-    </Form>
+    </FormWrapper>
   )
 }
 
