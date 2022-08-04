@@ -13,21 +13,23 @@ const LoginContainer = styled.div`
 
 const LogoContainer = styled.div`
   display: flex;
-  flex-direction: row;
-  top: 100px;
+  flex-direction: column;
+  margin-top: 5rem;
+  margin-bottom: -5rem;
 `
 const LogoImg = styled.img`
   width: 100px;
   heigth: 100px;
-  margin: 0 auto;
-  box-shadow: 0px 0px 2px #5f5f5f;
-  background-color: white;
+  margin: 0 auto 30px;
 `
 const LogoText = styled.span`
   text-align: center;
-  font-size: 28px;
+  font-size: 40px;
   padding-top: 24px;
   letter-spacing: 0.5px;
+  color: #475768;
+  font-weight: bold;
+  white-space: nowrap;
 `
 const Login = () => {
   return (
