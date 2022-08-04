@@ -5,7 +5,7 @@ function Home() {
   return (
     <div className="Home">
       <p>홈.</p>
-      <Link to="/signin">
+      <Link to="/login">
         <Button>클릭 signin 으로 이동</Button>
       </Link>
       <Link to="/404">
