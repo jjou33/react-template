@@ -4,7 +4,7 @@ import logo from '@/assets/react.svg'
 
 const LoginContainer = styled.div`
   width: 430px;
-  height: 700px;
+  height: 600px;
   padding: 60px 35px 35px 35px;
   border-radius: 40px;
   background-color: #ecf0f3;
@@ -14,13 +14,13 @@ const LoginContainer = styled.div`
 const LogoContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 5rem;
-  margin-bottom: -5rem;
+  align-items: center;
+  margin-top: 2rem;
+  padding-bottom: 3rem;
 `
 const LogoImg = styled.img`
   width: 100px;
   heigth: 100px;
-  margin: 0 auto 30px;
 `
 const LogoText = styled.span`
   text-align: center;

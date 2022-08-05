@@ -1,12 +1,19 @@
 import { Button, Checkbox, Form, Input } from 'antd'
+import axios from 'axios'
 import styled from 'styled-components'
 const FormWrapper = styled(Form)`
-  position: relative;
-  top: 10rem;
-  left: -2rem;
+  padding: 2rem 3rem 0 0;
 `
+
 const LoginForm = (props: any) => {
-  const onFinish = (values: any) => {}
+  const onFinish = async (values: any) => {
+    try {
+      const { data } = await axios.get('/todos')
+      console.log(data)
+    } catch (error: any) {
+      throw new Error(error)
+    }
+  }
 
   const onFinishFailed = (errorInfo: any) => {}
 
@@ -27,7 +34,6 @@ const LoginForm = (props: any) => {
       >
         <Input />
       </Form.Item>
-
       <Form.Item
         label="Password"
         name="password"
